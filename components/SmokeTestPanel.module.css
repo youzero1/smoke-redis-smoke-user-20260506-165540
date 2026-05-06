@@ -1,0 +1,207 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.targetSelector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.toggleGroup {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.toggleBtn {
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  transition: all 0.2s;
+}
+
+.toggleBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #94a3b8;
+}
+
+.activeToggle {
+  background: rgba(96, 165, 250, 0.15);
+  color: #60a5fa;
+}
+
+.runBtn {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border: none;
+  border-radius: 8px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.runBtn:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.runBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.summaryPass {
+  background: rgba(34, 197, 94, 0.08);
+  border-color: rgba(34, 197, 94, 0.2);
+}
+
+.summaryFail {
+  background: rgba(239, 68, 68, 0.08);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+.summaryIcon {
+  font-size: 24px;
+}
+
+.summaryTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.summaryDetail {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.testList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.testItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.testPass {
+  background: rgba(34, 197, 94, 0.05);
+  border-color: rgba(34, 197, 94, 0.15);
+}
+
+.testFail {
+  background: rgba(239, 68, 68, 0.05);
+  border-color: rgba(239, 68, 68, 0.15);
+}
+
+.testSkip {
+  background: rgba(148, 163, 184, 0.05);
+  border-color: rgba(148, 163, 184, 0.1);
+}
+
+.testLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.testPass .testIcon {
+  color: #4ade80;
+}
+
+.testFail .testIcon {
+  color: #f87171;
+}
+
+.testSkip .testIcon {
+  color: #94a3b8;
+}
+
+.testName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e2e8f0;
+  font-family: monospace;
+}
+
+.testMessage {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.testDuration {
+  font-size: 12px;
+  color: #475569;
+  font-family: monospace;
+}
+
+.empty {
+  text-align: center;
+  padding: 48px 24px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.emptyIcon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
